@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VYNOX — free, simple tools for creators, students and everyday ideas.">
+  <meta name="theme-color" content="#090711">
+  <title>VYNOX — Your creative toolkit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="VYNOX home">
+      <span class="brand-mark">✦</span><span>VYNOX</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#tools">Explore tools</a><a href="#about">About</a>
+    </nav>
+    <a class="top-cta" href="#tools">Get started <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span> YOUR FREE CREATIVE TOOLKIT</div>
+      <h1>Big ideas.<br><span>Made simpler.</span></h1>
+      <p class="hero-copy">Your creative space for smarter ideas. Create captions, bios, video titles, study notes and more — all in one place.</p>
+      <div class="hero-actions">
+        <a class="primary-btn" href="#tools">Explore free tools <span>→</span></a>
+        <span class="no-card">✦ Free to use · No sign-up</span>
+      </div>
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+      <div class="hero-spark spark-a">✳</div><div class="hero-spark spark-b">✦</div>
+      <div class="hero-bottom"><span>BUILT FOR CREATORS</span><span>STUDENTS</span><span>CURIOUS MINDS</span></div>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE TOOLBOX</div><h2>What are we making <span>today?</span></h2></div>
+        <div class="tool-count"><strong>06</strong><span>FREE TOOLS</span></div>
+      </div>
+      <div class="toolbar">
+        <label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Find a tool..." aria-label="Search tools"></label>
+        <div class="filters" role="group" aria-label="Filter tools">
+          <button class="filter active" data-filter="All">All tools</button>
+          <button class="filter" data-filter="Creator">Creator</button>
+          <button class="filter" data-filter="Writing">Writing</button>
+          <button class="filter" data-filter="Study">Study</button>
+        </div>
+      </div>
+      <div class="tool-grid" id="toolGrid">
+        <article class="tool-card featured" data-category="Creator" data-search="instagram caption social media post">
+          <div class="card-top"><span class="tool-icon icon-pink">✳</span><span class="tag">POPULAR</span></div>
+          <div class="card-meta">CREATOR TOOL · 01</div><h3>Caption Creator</h3>
+          <p>Give your next post a voice. Generate captions for your social media content.</p>
+          <button class="open-tool" data-tool="caption">Create a caption <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="Creator" data-search="youtube video title ideas">
+          <div class="card-top"><span class="tool-icon icon-orange">▶</span><span class="tag tag-soft">VIDEO</span></div>
+          <div class="card-meta">CREATOR TOOL · 02</div><h3>YouTube Title Lab</h3>
+          <p>Turn your video idea into catchy, clear title options.</p>
+          <button class="open-tool" data-tool="youtube">Make titles <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="Writing" data-search="instagram profile bio about me">
+          <div class="card-top"><span class="tool-icon icon-blue">＠</span><span class="tag tag-soft">PROFILE</span></div>
+          <div class="card-meta">WRITING TOOL · 03</div><h3>Bio Builder</h3>
+          <p>Find the right words for your profile and introduce yourself.</p>
+          <button class="open-tool" data-tool="bio">Build my bio <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="Study" data-search="study notes revision summary">
+          <div class="card-top"><span class="tool-icon icon-green">▤</span><span class="tag tag-soft">LEARNING</span></div>
+          <div class="card-meta">STUDY TOOL · 04</div><h3>Study Notes Helper</h3>
+          <p>Organise a topic into a simple revision outline and key points.</p>
+          <button class="open-tool" data-tool="notes">Make study notes <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="Creator" data-search="hashtags social media discoverability">
+          <div class="card-top"><span class="tool-icon icon-purple">#</span><span class="tag tag-soft">SOCIAL</span></div>
+          <div class="card-meta">CREATOR TOOL · 05</div><h3>Hashtag Mixer</h3>
+          <p>Get a starter set of relevant hashtags for your post topic.</p>
+          <button class="open-tool" data-tool="hashtags">Mix hashtags <span>↗</span></button>
+        </article>
+        <article class="tool-card" data-category="Writing" data-search="ai art image prompt generator">
+          <div class="card-top"><span class="tool-icon icon-yellow">✧</span><span class="tag tag-soft">ART & DESIGN</span></div>
+          <div class="card-meta">WRITING TOOL · 06</div><h3>Image Prompt Maker</h3>
+          <p>Build a detailed prompt for your favourite AI image generator.</p>
+          <button class="open-tool" data-tool="image">Create a prompt <span>↗</span></button>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>No tools found. Try another search.</div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-icon">✦</div>
+      <div><div class="eyebrow">YOUR AI. YOUR CREATIVE SPACE.</div><h2>Simple tools.<br><span>More room to create.</span></h2>
+      <p>VYNOX is a free starter toolkit for creators and students. Your text stays in this browser; this first version does not send your inputs to a server.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">✦</span><span>VYNOX</span></a><span>Create without limits.</span><span>© <span id="year"></span> VYNOX</span></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="tool-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="eyebrow" id="modalEyebrow">YOUR TOOL</div>
+      <h2 id="modalTitle">Tool title</h2><p class="modal-description" id="modalDescription"></p>
+      <form id="toolForm">
+        <label class="field-label" id="inputLabel" for="toolInput">Your idea</label>
+        <textarea id="toolInput" rows="3" maxlength="500" placeholder="Type your idea here..." required></textarea>
+        <label class="field-label" for="toneSelect">Style</label>
+        <select id="toneSelect">
+          <option value="Friendly">Friendly</option><option value="Funny">Funny</option><option value="Professional">Professional</option><option value="Minimal">Minimal</option><option value="Aesthetic">Aesthetic</option>
+        </select>
+        <button class="primary-btn generate-btn" type="submit">Generate <span>✦</span></button>
+      </form>
+      <div class="result-wrap" id="resultWrap" hidden>
+        <div class="result-heading"><span>YOUR RESULT</span><button id="copyButton" class="copy-btn">Copy result ↗</button></div>
+        <pre id="resultText"></pre>
+        <p class="result-note">Tip: Edit the result to make it sound like you.</p>
+      </div>
+      <p class="privacy-note">✦ Free browser-based generator. No account or API key needed.</p>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
